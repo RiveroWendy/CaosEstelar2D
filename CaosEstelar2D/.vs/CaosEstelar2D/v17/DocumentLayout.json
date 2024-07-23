@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\bll\\playerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|c:\\users\\wendy\\onedrive\\documentos\\github\\caosestelar2d\\caosestelar2d\\assets\\2.code\\be\\playerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\assets\\2.code\\be\\asteroidebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\be\\asteroidebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\assets\\2.code\\be\\playerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\be\\playerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|c:\\users\\wendy\\onedrive\\documentos\\github\\caosestelar2d\\caosestelar2d\\assets\\2.code\\be\\timerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\assets\\2.code\\be\\timerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\be\\timerbe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\assets\\2.code\\dal\\scoredal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\dal\\scoredal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\assets\\2.code\\be\\asteroidebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D45D7BC-6F67-B96F-B597-E0ADE92D00DA}|Assembly-CSharp.csproj|solutionrelative:assets\\2.code\\be\\asteroidebe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -104,39 +104,40 @@
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\PlayerBLL.cs",
               "ToolTip": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\PlayerBLL.cs",
               "RelativeToolTip": "Assets\\2.Code\\BLL\\PlayerBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T15:51:48.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayerBE.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BE\\PlayerBE.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BE\\PlayerBE.cs",
               "ToolTip": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BE\\PlayerBE.cs",
               "RelativeToolTip": "Assets\\2.Code\\BE\\PlayerBE.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAUwAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T15:50:06.355Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "AsteroideBE.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BE\\AsteroideBE.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BE\\AsteroideBE.cs",
               "ToolTip": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BE\\AsteroideBE.cs",
               "RelativeToolTip": "Assets\\2.Code\\BE\\AsteroideBE.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T15:12:18.602Z"
+              "WhenOpened": "2024-07-23T15:12:18.602Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ScoreDAL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\DAL\\ScoreDAL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\DAL\\ScoreDAL.cs",
@@ -148,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "NivelBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\NivelBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\NivelBLL.cs",
@@ -160,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TimerBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\TimerBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\TimerBLL.cs",
@@ -172,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StarBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\StarBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\StarBLL.cs",
@@ -184,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ScoreBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\ScoreBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\ScoreBLL.cs",
@@ -196,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ConstellationBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\ConstellationBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\ConstellationBLL.cs",
@@ -208,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AsteroideSpawnerBLL.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BLL\\AsteroideSpawnerBLL.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BLL\\AsteroideSpawnerBLL.cs",
@@ -220,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TimerBE.cs",
               "DocumentMoniker": "C:\\Users\\wendy\\OneDrive\\Documentos\\Github\\CaosEstelar2D\\CaosEstelar2D\\Assets\\2.Code\\BE\\TimerBE.cs",
               "RelativeDocumentMoniker": "Assets\\2.Code\\BE\\TimerBE.cs",
@@ -228,8 +229,7 @@
               "RelativeToolTip": "Assets\\2.Code\\BE\\TimerBE.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAswCMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T21:18:34.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-22T21:18:34.685Z"
             }
           ]
         },

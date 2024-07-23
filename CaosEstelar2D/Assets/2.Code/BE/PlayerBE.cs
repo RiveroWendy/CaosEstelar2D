@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace BE
 {
-    public class PlayerBE : MonoBehaviour
+    public class PlayerBE
     {
-        private float _speedMovement;
+        private float _speedMovement = 5f;
 
         public float SpeedMovement
         {
@@ -15,7 +15,7 @@ namespace BE
         }
 
 
-        private float _jumpForce;
+        private float _jumpForce = 5f;
 
         public float JumpForce
         {
@@ -23,5 +23,9 @@ namespace BE
             set { _jumpForce = value; }
         }
 
+        public PlayerBE()
+        {
+            
+        }
     }
 }
