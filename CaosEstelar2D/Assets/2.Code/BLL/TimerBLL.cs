@@ -1,18 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using BE;
 
-public class TimerBLL : MonoBehaviour
+namespace BLL
 {
-    // Start is called before the first frame update
-    void Start()
+    public class TimerBLL : MonoBehaviour
     {
-        
-    }
+        public void UpdateTimer()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
+
+        public void ShowTimer()
+        {
+
+        }
+
+        public void RestartTimer()
+        {
+
+        }
+
+        public void GamePaused()
+        {
+
+        }
     }
 }

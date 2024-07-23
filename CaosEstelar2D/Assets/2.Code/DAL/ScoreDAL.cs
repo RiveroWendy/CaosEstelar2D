@@ -1,18 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BE;
 
-public class ScoreDAL : MonoBehaviour
+namespace DAL
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ScoreDAL : MonoBehaviour
     {
-        
-    }
+        public void CrearPuntaje()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
+
+        public void GuardarPuntaje()
+        {
+
+        }
+
+        public void ActualizarPuntaje()
+        {
+
+        }
+
     }
 }

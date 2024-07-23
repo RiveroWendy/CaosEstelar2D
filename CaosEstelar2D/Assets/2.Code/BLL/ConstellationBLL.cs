@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BE;
 
-public class ConstellationBLL : MonoBehaviour
+namespace BLL
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ConstellationBLL : MonoBehaviour
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void VerifySequence()
+        {
+
+        }
+
+        public void RestartSequence()
+        {
+
+        }
     }
 }

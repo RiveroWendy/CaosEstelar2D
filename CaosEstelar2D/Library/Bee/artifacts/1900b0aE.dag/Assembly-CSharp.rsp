@@ -116,6 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -350,6 +351,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEditorBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEditorBridge.005.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
@@ -387,12 +390,15 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/2.Code/BE/AsteroideBE.cs"
 "Assets/2.Code/BE/ConstellationBE.cs"
+"Assets/2.Code/BE/PlayerBE.cs"
 "Assets/2.Code/BE/ScoreBE.cs"
 "Assets/2.Code/BE/StarBE.cs"
 "Assets/2.Code/BE/TimerBE.cs"
 "Assets/2.Code/BLL/AsteroideSpawnerBLL.cs"
 "Assets/2.Code/BLL/ConstellationBLL.cs"
 "Assets/2.Code/BLL/LevelBLL.cs"
+"Assets/2.Code/BLL/NivelBLL.cs"
+"Assets/2.Code/BLL/PlayerBLL.cs"
 "Assets/2.Code/BLL/ScoreBLL.cs"
 "Assets/2.Code/BLL/StarBLL.cs"
 "Assets/2.Code/BLL/TimerBLL.cs"

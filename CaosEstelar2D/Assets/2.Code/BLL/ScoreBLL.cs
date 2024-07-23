@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BE;
 
-public class ScoreBLL : MonoBehaviour
+namespace BLL
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ScoreBLL : MonoBehaviour
     {
-        
-    }
+        //private ScoreBE _scoreBE;
+        //private TimerBE _timerBE;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private ScoreBE _scoreBE;
+
+        public ScoreBE ScoreBE
+        {
+            get { return _scoreBE; }
+            set { _scoreBE = value; }
+        }
+
+        private TimerBE _timerBE;
+
+        public TimerBE TimerBE
+        {
+            get { return _timerBE; }
+            set { _timerBE = value; }
+        }
+
+
+        public void CalculateScore()
+        {
+
+        }
+
+        public void ShowScore()
+        {
+
+        }
     }
 }

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+namespace BE
+{
 public class AsteroideBE : MonoBehaviour
 {
 	private float _speedMovement;
@@ -32,4 +35,5 @@ public class AsteroideBE : MonoBehaviour
 	{
 
 	}
+}
 }
