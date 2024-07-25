@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
 namespace BE
 {
-    public class TimerBE : MonoBehaviour
+    public class TimerBE
     {
-        private float _totalTime;
+        private float _totalTime = 30f;
 
         public float TotalTime
         {
@@ -23,14 +21,17 @@ namespace BE
             set { _currentTime = value; }
         }
 
-        private bool _isGamePaused;
+        private bool _isTimerFinished = false;
 
-        public bool IsGamePaused
+        public bool IsTimerFinished
         {
-            get { return _isGamePaused; }
-            set { _isGamePaused = value; }
+            get { return _isTimerFinished; }
+            set { _isTimerFinished = value; }
         }
 
-
+        public TimerBE()
+        {
+            
+        }
     }
 }

@@ -15,12 +15,28 @@ namespace BE
         }
 
 
-        private float _jumpForce = 5f;
+        private float _jumpForce = 7f;
 
         public float JumpForce
         {
             get { return _jumpForce; }
             set { _jumpForce = value; }
+        }
+
+        private int _limitJumps = 3;
+
+        public int LimitJumps
+        {
+            get { return _limitJumps; }
+            set { _limitJumps = value; }
+        }
+
+        private bool _playerOnTheGround = false;
+
+        public bool PlayerOnTheGround
+        {
+            get { return _playerOnTheGround; }
+            set { _playerOnTheGround = value; }
         }
 
         public PlayerBE()

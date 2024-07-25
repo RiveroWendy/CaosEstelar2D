@@ -41,6 +41,15 @@ namespace BLL
             set { _moveInput = value; }
         }
 
+        private int _remainingJumps;
+
+        public int RemainingJumps
+        {
+            get { return _remainingJumps; }
+            set { _remainingJumps = value; }
+        }
+
+
         #endregion
 
         private void Awake()
@@ -51,11 +60,15 @@ namespace BLL
 
             PlayerInputI.actions["Movement"].performed += ctx => MoveInput = ctx.ReadValue<float>();
             PlayerInputI.actions["Movement"].canceled += ctx => MoveInput = 0f;
+           // PlayerInputI.actions["Jump"].performed += PlayerJumpWhenPressButton;
+            _remainingJumps = PlayerBE.LimitJumps;
+
         }
 
         private void Update()
         {
             PlayerMovement();
+            CheckIfPlayerOnTheGround();
         }
 
         #region Methods
@@ -70,10 +83,26 @@ namespace BLL
 
         public void PlayerJumpWhenPressButton(InputAction.CallbackContext callbackContext)
         {
-            if (RigidBodyPlayer != null && callbackContext.performed)
+            if (RigidBodyPlayer != null && callbackContext.performed && _remainingJumps > 0)
             {
                 RigidBodyPlayer.bodyType = RigidbodyType2D.Dynamic;
                 RigidBodyPlayer.velocity = new Vector2(RigidBodyPlayer.velocity.x, PlayerBE.JumpForce);
+                _remainingJumps--;
+            }
+        }
+
+        private void CheckIfPlayerOnTheGround()
+        {
+            // Assuming the player is considered on the ground if their vertical velocity is close to zero.
+            // You can replace this with a more accurate ground check if needed.
+            if (Mathf.Abs(RigidBodyPlayer.velocity.y) < 0.01f)
+            {
+                PlayerBE.PlayerOnTheGround = true;
+                _remainingJumps = PlayerBE.LimitJumps;
+            }
+            else
+            {
+                PlayerBE.PlayerOnTheGround = false;
             }
         }
         #endregion

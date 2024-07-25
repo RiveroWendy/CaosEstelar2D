@@ -1,17 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class ConstellationBE : MonoBehaviour
+using BE;
+public class ConstellationBE: MonoBehaviour
 {
-	private List<int> _starOrder;
-
-	public List<int> StarOrder
-	{
-		get { return _starOrder; }
-		set { _starOrder = value; }
-	}
-
 	private int _currentIndex;
 
 	public int CurrentIndex
@@ -36,4 +28,9 @@ public class ConstellationBE : MonoBehaviour
 		set { _constellationCompleted = value; }
 	}
 
+    public ConstellationBE()
+    {
+        _currentIndex = 0;
+        _constellationCompleted = false;
+    }
 }
