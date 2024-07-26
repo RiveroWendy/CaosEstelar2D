@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreBE : MonoBehaviour
+public class ScoreBE
 {
-	private int _levelScore;
+	private int _levelScore = 0;
 
 	public int LevelScore
 	{

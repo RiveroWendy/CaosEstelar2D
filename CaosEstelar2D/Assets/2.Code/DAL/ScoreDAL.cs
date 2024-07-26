@@ -5,22 +5,38 @@ using BE;
 
 namespace DAL
 {
-    public class ScoreDAL : MonoBehaviour
+    public class ScoreDAL
     {
-        public void CrearPuntaje()
+        public ScoreDAL()
         {
-
         }
 
-        public void GuardarPuntaje()
+        public void CrearLevelScore(int score)
         {
-
+            PlayerPrefs.SetInt("LevelScore", score);
+            PlayerPrefs.Save();
         }
 
-        public void ActualizarPuntaje()
+        public int ObtenerLevelScore()
         {
-
+            return PlayerPrefs.HasKey("LevelScore") ? PlayerPrefs.GetInt("LevelScore") : 0;
         }
 
+        public void GuardarTotalScore(int score)
+        {
+            PlayerPrefs.SetInt("TotalScore", score);
+            PlayerPrefs.Save();
+        }
+
+        public int ObtenerTotalScore()
+        {
+            return PlayerPrefs.HasKey("TotalScore") ? PlayerPrefs.GetInt("TotalScore") : 0;
+        }
+
+        public void ActualizarLevelScore(int score)
+        {
+            PlayerPrefs.SetInt("LevelScore", score);
+            PlayerPrefs.Save();
+        }
     }
 }

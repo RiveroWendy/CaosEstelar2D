@@ -15,7 +15,8 @@ public class LevelBLL : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private Transform _player;
     [SerializeField] private float _secondsPlayerOutsideBoundaries;
-
+    [SerializeField] private string _levelName;
+    [SerializeField] private float _secondsWaitChangeScene;
     private Scene _currentScene;
 
     private void Start()
@@ -54,9 +55,17 @@ public class LevelBLL : MonoBehaviour
 
     public void LevelCompleted()
     {
-        // Implementar la lógica para completar el nivel
+        if (_constellationBLL.IsConstellationCompleted())
+        {
+            StartCoroutine(WaitAndChangeScene());
+        }
     }
 
-    // Condiciones para pasar de nivel
-    // - Que se complete la constelación
+    private IEnumerator WaitAndChangeScene()
+    {
+        yield return new WaitForSeconds(_secondsWaitChangeScene);
+        SceneManager.LoadScene(_levelName);
+    }
+
+
 }

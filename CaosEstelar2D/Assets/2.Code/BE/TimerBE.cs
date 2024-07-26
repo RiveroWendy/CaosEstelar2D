@@ -5,7 +5,7 @@ namespace BE
 {
     public class TimerBE
     {
-        private float _totalTime = 30f;
+        private float _totalTime;
 
         public float TotalTime
         {
@@ -29,9 +29,9 @@ namespace BE
             set { _isTimerFinished = value; }
         }
 
-        public TimerBE()
+        public TimerBE(float totalTime)
         {
-            
+            this.TotalTime = totalTime;
         }
     }
 }

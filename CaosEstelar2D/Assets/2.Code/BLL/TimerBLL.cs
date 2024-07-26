@@ -8,7 +8,7 @@ namespace BLL
     public class TimerBLL : MonoBehaviour
     {
         #region Properties
-        private TimerBE _timerBEObject = new();
+        private TimerBE _timerBEObject;
 
         [SerializeField]
         private TextMeshProUGUI _textMeshProTimer;
@@ -17,10 +17,14 @@ namespace BLL
         private ConstellationBLL _constellationBLLObject;
 
         private bool _isPaused = false;
+
+        [SerializeField]
+        private float _timerSeconds = 0;
         #endregion
 
         private void Start()
         {
+            _timerBEObject = new(_timerSeconds);
             _timerBEObject.CurrentTime = _timerBEObject.TotalTime;
             StartCoroutine(UpdateTimerCoroutine());
         }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using BE;
 using TMPro;
+using DAL;
+using UnityEngine.SceneManagement;
 
 namespace BLL
 {
@@ -19,12 +21,32 @@ namespace BLL
         private TimerBLL _timerBLL;
 
         [SerializeField]
-        private TextMeshProUGUI _textScore;
+        private TextMeshProUGUI _textLevelScore;
+        [SerializeField]
+        private TextMeshProUGUI _textTotalScore;
+        private ScoreDAL _scoreDAL;
 
         private void Start()
         {
             _scoreBE = new ScoreBE();
+            _scoreDAL = new ScoreDAL();
             _timerBLL = FindObjectOfType<TimerBLL>();
+
+
+            // Reiniciar el puntaje total si estamos en el nivel 1
+            if (SceneManager.GetActiveScene().name == "Level 1")
+            {
+                ResetTotalScore();
+            }
+            else
+            {
+                LoadTotalScore();
+            }
+
+            if (SceneManager.GetActiveScene().name == "Final Scene")
+            {
+                ShowTotalScore();
+            }
         }
 
         public void CalculateScore()
@@ -32,14 +54,41 @@ namespace BLL
             if (_timerBLL != null)
             {
                 float remainingTime = _timerBLL.GetRemainingTime();
-                _scoreBE.LevelScore = (int)(remainingTime * 10); 
+                _scoreBE.LevelScore = (int)(remainingTime * 10);
+                _scoreBE.TotalScore += _scoreBE.LevelScore;
                 ShowScore();
+                SaveScore();
             }
         }
 
         public void ShowScore()
         {
-            _textScore.text = _scoreBE.LevelScore.ToString();
+            _textLevelScore.text = _scoreBE.LevelScore.ToString();
+            // No actualizamos el total score aquí para evitar mostrarlo antes de tiempo
+        }
+
+        private void ShowTotalScore()
+        {
+            _textTotalScore.text = _scoreBE.TotalScore.ToString();
+        }
+
+        private void SaveScore()
+        {
+            Debug.Log("Score Guardado: " + _scoreBE.TotalScore);
+            _scoreDAL.GuardarTotalScore(_scoreBE.TotalScore);
+        }
+
+        private void LoadTotalScore()
+        {
+            _scoreBE.TotalScore = _scoreDAL.ObtenerTotalScore();
+            Debug.Log("Total Score Loaded: " + _scoreBE.TotalScore);
+        }
+
+        private void ResetTotalScore()
+        {
+            _scoreBE.TotalScore = 0;
+            _scoreDAL.GuardarTotalScore(_scoreBE.TotalScore);
+            Debug.Log("Total Score Reset to 0");
         }
     }
 }
