@@ -11,17 +11,6 @@ namespace DAL
         {
         }
 
-        public void CrearLevelScore(int score)
-        {
-            PlayerPrefs.SetInt("LevelScore", score);
-            PlayerPrefs.Save();
-        }
-
-        public int ObtenerLevelScore()
-        {
-            return PlayerPrefs.HasKey("LevelScore") ? PlayerPrefs.GetInt("LevelScore") : 0;
-        }
-
         public void GuardarTotalScore(int score)
         {
             PlayerPrefs.SetInt("TotalScore", score);
@@ -33,10 +22,6 @@ namespace DAL
             return PlayerPrefs.HasKey("TotalScore") ? PlayerPrefs.GetInt("TotalScore") : 0;
         }
 
-        public void ActualizarLevelScore(int score)
-        {
-            PlayerPrefs.SetInt("LevelScore", score);
-            PlayerPrefs.Save();
-        }
+      
     }
 }

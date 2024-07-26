@@ -10,6 +10,7 @@ namespace BLL
 {
     public class ScoreBLL : MonoBehaviour
     {
+        #region Properties
         private ScoreBE _scoreBE;
 
         public ScoreBE ScoreBE
@@ -25,7 +26,7 @@ namespace BLL
         [SerializeField]
         private TextMeshProUGUI _textTotalScore;
         private ScoreDAL _scoreDAL;
-
+        #endregion
         private void Start()
         {
             _scoreBE = new ScoreBE();
@@ -48,7 +49,7 @@ namespace BLL
                 ShowTotalScore();
             }
         }
-
+        #region Methods
         public void CalculateScore()
         {
             if (_timerBLL != null)
@@ -91,4 +92,5 @@ namespace BLL
             Debug.Log("Total Score Reset to 0");
         }
     }
+    #endregion
 }

@@ -6,9 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelBLL : MonoBehaviour
 {
-    // Condiciones para reiniciar el nivel   
-    // - Que termine el timer
-    // - Que se salga del la pantalla
+    #region Properties
 
     [SerializeField] private TimerBLL _timerBLL;
     [SerializeField] private ConstellationBLL _constellationBLL;
@@ -18,7 +16,7 @@ public class LevelBLL : MonoBehaviour
     [SerializeField] private string _levelName;
     [SerializeField] private float _secondsWaitChangeScene;
     private Scene _currentScene;
-
+    #endregion
     private void Start()
     {
         _currentScene = SceneManager.GetActiveScene();
@@ -28,7 +26,7 @@ public class LevelBLL : MonoBehaviour
     {
         CheckForLevelResetConditions();
     }
-
+    #region Methods
     private void CheckForLevelResetConditions()
     {
         if (IsTimerFinished() || IsPlayerOutsideBoundaries())
@@ -67,5 +65,5 @@ public class LevelBLL : MonoBehaviour
         SceneManager.LoadScene(_levelName);
     }
 
-
+    #endregion
 }

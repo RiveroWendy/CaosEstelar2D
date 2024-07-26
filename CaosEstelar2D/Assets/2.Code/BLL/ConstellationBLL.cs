@@ -1,13 +1,17 @@
 using BE;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace BLL
 {
     public class ConstellationBLL : MonoBehaviour
     {
+        #region Properties
         [SerializeField]
         private List<GameObject> _starOrder;
+        [SerializeField]
+        private Rigidbody2D _playerGameObject;
 
         public List<GameObject> StarOrder
         {
@@ -27,6 +31,9 @@ namespace BLL
         private ScoreBLL _scoreBLL;
         private LevelBLL _levelBLL;
 
+        #endregion
+
+        #region Methods
         private void Awake()
         {
             _constellationBEObject = GetComponent<ConstellationBE>() ?? gameObject.AddComponent<ConstellationBE>();
@@ -73,6 +80,7 @@ namespace BLL
                         _lineConstellationBLL.SetUpLine();
                         _scoreBLL.CalculateScore();
                     }
+                    _playerGameObject.bodyType = RigidbodyType2D.Static;
                     // Llamar a LevelCompleted en LevelBLL
                     if (_levelBLL != null)
                     {
@@ -128,4 +136,5 @@ namespace BLL
             }
         }
     }
+    #endregion
 }
