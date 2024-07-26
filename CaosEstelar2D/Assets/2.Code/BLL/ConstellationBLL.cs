@@ -22,12 +22,22 @@ namespace BLL
             get { return _constellationBEObject; }
             set { _constellationBEObject = value; }
         }
+        private LineConstellationBLL _lineConstellationBLL;
 
 
         private void Awake()
         {
             _constellationBEObject = GetComponent<ConstellationBE>() ?? gameObject.AddComponent<ConstellationBE>();
             _constellationBEObject.Star = new StarBE(0); // Asegura que Star no sea nulo
+            GameObject lineConstellationObject = GameObject.FindGameObjectWithTag("LineConstellation");
+            if (lineConstellationObject != null)
+            {
+                _lineConstellationBLL = lineConstellationObject.GetComponent<LineConstellationBLL>();
+            }
+            else
+            {
+                Debug.LogError("No GameObject with the 'LineConstellation' tag found");
+            }
         }
 
         public bool VerifySequence(GameObject touchedStar)
@@ -47,6 +57,12 @@ namespace BLL
                 {
                     ConstellationBEObject.ConstellationCompleted = true;
                     Debug.Log("Constellation completed!");
+                    // Llamada a SetUpLine cuando la constelación está completa
+                    if (_lineConstellationBLL != null)
+                    {
+                        Debug.Log("Se dibuja la linea");
+                        _lineConstellationBLL.SetUpLine();
+                    }
                     return true; // Retorna true si la constelación se completa
                 }
 

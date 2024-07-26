@@ -14,17 +14,22 @@ namespace BLL
 
         public StarBE StarBEObject
         {
-            get => _starBEObject;
-            set => _starBEObject = value;
+            get { return _starBEObject; }
+            set { _starBEObject = value; }
         }
 
         public SpriteRenderer StarSpriteRenderer
         {
-            get => _starSpriteRenderer;
-            private set => _starSpriteRenderer = value;
+            get { return _starSpriteRenderer; }
+            set { _starSpriteRenderer = value; }
         }
+        private int _randomValue;
 
-        public int RandomValue { get; private set; }
+        public int RandomValue
+        {
+            get { return _randomValue; }
+            set { _randomValue = value; }
+        }
 
         private void Awake()
         {

@@ -72,6 +72,7 @@
     <Compile Include="Assets\2.Code\BLL\PlayerBLL.cs" />
     <Compile Include="Assets\2.Code\DAL\ScoreDAL.cs" />
     <Compile Include="Assets\2.Code\BE\ConstellationBE.cs" />
+    <Compile Include="Assets\2.Code\BLL\LineConstellationBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\AsteroideSpawnerBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\TimerBLL.cs" />
   </ItemGroup>
