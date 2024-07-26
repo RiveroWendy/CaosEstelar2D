@@ -67,5 +67,10 @@ namespace BLL
         {
             _isPaused = false;
         }
+
+        public float GetRemainingTime()
+        {
+            return _timerBEObject.CurrentTime;
+        }
     }
 }

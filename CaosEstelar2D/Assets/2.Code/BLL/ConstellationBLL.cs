@@ -24,6 +24,7 @@ namespace BLL
         }
         private LineConstellationBLL _lineConstellationBLL;
 
+        private ScoreBLL _scoreBLL;
 
         private void Awake()
         {
@@ -38,6 +39,7 @@ namespace BLL
             {
                 Debug.LogError("No GameObject with the 'LineConstellation' tag found");
             }
+            _scoreBLL = FindObjectOfType<ScoreBLL>();
         }
 
         public bool VerifySequence(GameObject touchedStar)
@@ -62,6 +64,7 @@ namespace BLL
                     {
                         Debug.Log("Se dibuja la linea");
                         _lineConstellationBLL.SetUpLine();
+                        _scoreBLL.CalculateScore();
                     }
                     return true; // Retorna true si la constelación se completa
                 }

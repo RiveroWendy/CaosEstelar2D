@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BE;
+using TMPro;
 
 namespace BLL
 {
     public class ScoreBLL : MonoBehaviour
     {
-        //private ScoreBE _scoreBE;
-        //private TimerBE _timerBE;
-
         private ScoreBE _scoreBE;
 
         public ScoreBE ScoreBE
@@ -18,23 +16,30 @@ namespace BLL
             set { _scoreBE = value; }
         }
 
-        private TimerBE _timerBE;
+        private TimerBLL _timerBLL;
 
-        public TimerBE TimerBE
+        [SerializeField]
+        private TextMeshProUGUI _textScore;
+
+        private void Start()
         {
-            get { return _timerBE; }
-            set { _timerBE = value; }
+            _scoreBE = new ScoreBE();
+            _timerBLL = FindObjectOfType<TimerBLL>();
         }
-
 
         public void CalculateScore()
         {
-
+            if (_timerBLL != null)
+            {
+                float remainingTime = _timerBLL.GetRemainingTime();
+                _scoreBE.LevelScore = (int)(remainingTime * 10); 
+                ShowScore();
+            }
         }
 
         public void ShowScore()
         {
-
+            _textScore.text = _scoreBE.LevelScore.ToString();
         }
     }
 }
