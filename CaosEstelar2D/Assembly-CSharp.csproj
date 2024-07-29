@@ -64,6 +64,7 @@
     <Compile Include="Assets\2.Code\BLL\StarBLL.cs" />
     <Compile Include="Assets\2.Code\BE\TimerBE.cs" />
     <Compile Include="Assets\2.Code\BLL\ConstellationBLL.cs" />
+    <Compile Include="Assets\2.Code\BLL\MainMenuBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\ScoreBLL.cs" />
     <Compile Include="Assets\2.Code\BE\ScoreBE.cs" />
     <Compile Include="Assets\2.Code\BLL\LevelBLL.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\2.Code\BLL\PlayerBLL.cs" />
     <Compile Include="Assets\2.Code\DAL\ScoreDAL.cs" />
     <Compile Include="Assets\2.Code\BE\ConstellationBE.cs" />
+    <Compile Include="Assets\2.Code\BLL\MapGuideBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\LineConstellationBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\AsteroideSpawnerBLL.cs" />
     <Compile Include="Assets\2.Code\BLL\TimerBLL.cs" />

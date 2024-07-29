@@ -402,6 +402,8 @@
 "Assets/2.Code/BLL/ConstellationBLL.cs"
 "Assets/2.Code/BLL/LevelBLL.cs"
 "Assets/2.Code/BLL/LineConstellationBLL.cs"
+"Assets/2.Code/BLL/MainMenuBLL.cs"
+"Assets/2.Code/BLL/MapGuideBLL.cs"
 "Assets/2.Code/BLL/PlayerBLL.cs"
 "Assets/2.Code/BLL/ScoreBLL.cs"
 "Assets/2.Code/BLL/StarBLL.cs"
